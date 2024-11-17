@@ -4,6 +4,7 @@ from calculate import calc
 
 
 class TestCalcFunction(unittest.TestCase):
+    
     def test_invalid_figure(self):
         with self.assertRaises(AssertionError):
             calc('hexagon', 'area', [5])
