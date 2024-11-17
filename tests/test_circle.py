@@ -36,7 +36,7 @@ class TestCircleFunctions(unittest.TestCase):
         with self.assertRaises(ValueError):
             perimeter(-1)
 
-    def test_perimeter_non_numeber(self):
+    def test_perimeter_non_number(self):
         with self.assertRaises(TypeError):
             perimeter("3")
 
@@ -46,3 +46,4 @@ class TestCircleFunctions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+    
