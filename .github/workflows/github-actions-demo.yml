@@ -12,7 +12,7 @@ on:
       - release/*
 
 jobs:
-  python-ci:
+   python-ci:
     runs-on: ubuntu-latest
 
     env:
@@ -25,6 +25,9 @@ jobs:
           echo "Full_Name: ${{ env.Name }}"
           echo "Group_Number: ${{ env.Group_Number }}"
           echo "GitHub Username: ${{ github.actor }}"
+
+      - name: Checking
+        uses: actions/checkout@v2
 
       - name: Set up Python 3.13
         uses: actions/setup-python@v4
