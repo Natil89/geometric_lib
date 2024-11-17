@@ -2,7 +2,7 @@ import circle
 import square
 
 
-figs = ['circle', 'square', 'triangle']
+figs = ['circle', 'square']
 funcs = ['perimeter', 'area']
 sizes = {
     "area-circle": 1,
