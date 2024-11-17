@@ -21,7 +21,7 @@ class TestCalcFunction(unittest.TestCase):
 
     def test_invalid_size_count(self):
         with self.assertRaises(ValueError):
-            calc('circle', 'area', [5, 6])
+            calc('circle', 'area', [5])
 
 if __name__ == "__main__":
     unittest.main()
