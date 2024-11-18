@@ -2,7 +2,9 @@ import unittest
 import math
 from triangle import area, perimeter
 
+
 class TestTriangleFunctions(unittest.TestCase):
+
     def test_area_valid_triangle(self):
         self.assertAlmostEqual(area(3, 4, 5), 6.0, places=2)
         self.assertAlmostEqual(area(2, 2, 2), math.sqrt(3), places=2)
@@ -62,6 +64,7 @@ class TestTriangleFunctions(unittest.TestCase):
             perimeter(3, None, 5)
         with self.assertRaises(TypeError):
             perimeter(3, 4, "a")
+
 
 if __name__ == "__main__":
     unittest.main()
