@@ -1,5 +1,4 @@
 import unittest
-import math
 from square import area, perimeter
 
 
